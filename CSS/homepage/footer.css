@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root {
+  --laranja: #F07E2C;
+  --cinza-escuro: #444444;
+  --branco-principal: #FFFFFF;
+  --branco-secundario: #FFFAFA;
+  --margem-lateral: 250px;
+  --fonte-titulo: 'Nunito';
+  --fonte-texto: 'Lato';
+  --fonte-dados: 'Inter';
+}
+
+footer {
+  background-color: var(--laranja);
+  flex-wrap: wrap;
+}
+
+.elemento {
+  flex-wrap: wrap;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  background-color: var(--laranja);
+}
+
+.elementos__media {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+  gap: 2rem;
+}
+
+.elementos__media-social {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.elementos__media-social img {
+  max-width: 300px;
+  max-height: 70px;
+}
+
+.media__logo-empresa {
+  max-width: 280px;
+  max-height: 75px;
+}
+
+.media__logo-social {
+  max-width: 40px;
+  max-height: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.location {
+  display: flex;
+}
+
+.location h4{
+  font-family: var(--fonte-dados);
+  color: var(--branco-principal);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.matriz {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.matriz img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.matriz p {
+  font-family: var(--fonte-dados);
+  color: var(--branco-principal);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.ponto-de-apoio {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ponto-de-apoio img {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.ponto-de-apoio p {
+  font-family: var(--fonte-dados);
+  color: var(--branco-principal);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.horario-de-funcionamento {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.horario-de-funcionamento img {
+  max-width: 30px;
+  max-width: 30px;
+}
+
+.horario-de-funcionamento p {
+  font-family: var(--fonte-dados);
+  color: var(--branco-principal);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.contato {
+  font-family: var(--fonte-dados);
+  color: var(--branco-principal);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.telefones {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.telefones img {
+  max-width: 30px;
+  max-width: 30px;
+}
+
+.telefones p {
+  font-family: var(--fonte-dados);
+  color: var(--branco-principal);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.whatsapp img {
+  max-width: 30px;
+  max-width: 30px;
+}
+
+.whatsapp p {
+  font-family: var(--fonte-dados);
+  color: var(--branco-principal);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.emails {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.emails img {
+  max-width: 30px;
+  max-width: 30px;
+}
+
+.emails p {
+  font-family: var(--fonte-dados);
+  color: var(--branco-principal);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.direitos {
+  width: 100%;
+  background-color: var(--laranja);
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--branco-principal);
+}
+
+.direitos p {
+  font-size: 12px;
+  font-family: var(--fonte-dados);
+  color: var(--branco-principal);
+  padding: 1em 10em;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+  footer {
+    width: 100%;
+    height: auto;
+  }
+
+  .elemento {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .direitos {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .direitos p {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+}

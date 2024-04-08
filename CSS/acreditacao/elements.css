@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --laranja: #F07E2C;
+  --cinza-escuro: #444444;
+  --branco-principal: #FFFFFF;
+  --branco-secundario: #F3F3F3;
+  --margem-lateral: 250px;
+  --fonte-titulo: 'Nunito';
+  --fonte-texto: 'Lato';
+  --fonte-dados: 'Inter';
+}
+
+.about-banner {
+  background-image: url(./Banner-acreditação\ 6.png);
+  width: 100%;
+  height: 35em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.texto-banner {
+  flex-direction: column;
+  display: flex;
+  margin: 0 13%;
+  width: 35%;
+  height: 75%;
+  gap: 3em;
+}
+
+.texto-banner01 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--branco-principal);
+  font-family: var(--fonte-titulo);
+  font-size: 2.3em;
+  font-weight: 600;
+}
+
+.destaque01 {
+  font-weight: 800;
+}
+
+.texto-banner02 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-items: center;
+  color: var(--branco-principal);
+  font-family: var(--fonte-titulo);
+  font-weight: 500;
+  font-size: 1.65em;
+}
+
+.acreditacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.acreditacao-elementos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 75%;
+  height: auto;
+}
+
+.acreditacao-texto {
+  width: 60%;
+  height: auto;
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.acreditacao-criativo {
+  width: 75%;
+  height: 75%;
+  z-index: 2;
+}
+
+.acreditacao-criativo img {
+  width: 100%;
+  height: 100%;
+}
+
+.text01 {
+  display: flex;
+  width: 90%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--cinza-escuro);
+  font-family: var(--fonte-titulo);
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.text02 {
+  display: flex;
+  width: 90%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--cinza-escuro);
+  font-family: var(--fonte-titulo);
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.itens-acreditados {
+  margin-bottom: 5em;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.intro-acreditacao-items {
+  width: auto;
+  height: auto;
+  text-transform: uppercase;
+  color: var(--cinza-escuro);
+  font-family: var(--fonte-titulo);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.cards {
+  width: 85%;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.card-acreditacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 27.5%;
+  height: 30em;
+  background-color: var(--branco-principal);
+  border-radius: 8px;
+  border-top: 3px solid var(--laranja);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(7px);
+}
+
+.icon {
+  position: relative;
+  top: 2.5em;
+  left: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--laranja);
+  width: 5em;
+  height: 5em;
+  border-radius: 5px;
+}
+
+.icon img {
+  width: 75%;
+  height: 75%;
+}
+
+.item {
+  color: var(--cinza-escuro);
+  font-family: var(--fonte-titulo);
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+
+.lista {
+  margin: 10% 5%;
+}
+
+.card-alimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 27.5%;
+  height: 35em;
+  border-top: 3px solid var(--laranja);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(7px);
+  border-radius: 5px;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="shortcut icon" href="./img/fav-icon.svg" type="image logo icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/_reboot.scss">
+    <link rel="stylesheet" href="./CSS/credenciamentos/reset.css">
+    <link rel="stylesheet" href="./CSS/credenciamentos/header.css">
+    <link rel="stylesheet" href="./CSS/credenciamentos/footer.css">
+    <link rel="stylesheet" href="./CSS/credenciamentos/style.css">
+    <title>Terranálises</title>
+</head>
+
+
+
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="btn nav-link"><a class="nav-btn" href="./about.html">o laboratório</a></button>
+            <button id="servicosBtn" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">servicos</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./divisao-agricola.html">Divisão agrícola</a></li>
+                    <li><a class="dropdown-item" href="./divisao-ambiental.html">divisão ambiental</a></li>
+                    <li><a class="dropdown-item" href="./divisao-de-alimentos.html">divisão de alimentos</a></li>
+                    <li><a class="dropdown-item" href="./amostragem.html">amostragem</a></li>
+                </ul>
+            <button class="btn nav-link"><a class="nav-btn" href="./credenciamentos.html">credenciamentos</a></button>
+            <button class="btn nav-link"><a class="nav-btn" href="./acreditacao.html">acreditação</a></button>
+        </div>
+    </header>
+
+    <section class="cabecalho-inferior">
+        <div class="cabecalho-area">
+            <div class="logo-cabecalho-inf">
+                <a href="./index.html">
+                    <img class="cabecalho-inferior__logo" src="./img/logo.svg" alt="logo terranálises">
+                </a>
+            </div>
+            <div class="cabecalho-inferior__conteudo">
+                <div class="relatorios">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M20.5312 11.3477V5.54688C20.5312 3.02148 18.4805 0.970703 15.9551 0.970703H8.86523C6.33984 0.970703 4.29492 3.02148 4.29492 5.54688V11.3535C1.85156 11.6113 0 13.6738 0 16.1289V26.1719C0 28.8203 2.15039 30.9707 4.79883 30.9707H20.0215C22.6699 30.9707 24.8203 28.8203 24.8203 26.1719V16.123C24.8262 13.668 22.9746 11.6113 20.5312 11.3477ZM9.68555 5.67578H15.1465C15.5215 5.67578 15.8262 5.98047 15.8262 6.35547V11.3242H9.00586V6.35547C9.00586 5.98047 9.31055 5.67578 9.68555 5.67578ZM13.9453 21.3789V24.3262C13.9453 25.1699 13.2598 25.8555 12.416 25.8555C11.5723 25.8555 10.8867 25.1699 10.8867 24.3262V21.3789C9.65625 20.5352 9.33984 18.8477 10.1836 17.6172C11.0273 16.3867 12.7148 16.0703 13.9453 16.9141C15.1758 17.7578 15.4922 19.4453 14.6484 20.6758C14.4609 20.9512 14.2207 21.1914 13.9453 21.3789Z" fill="#F07E2C"/>
+                    </svg>
+                    <a class="conteudo__textos transition" href="https://terranalises.glabnet1.com.br/cliente/login/">RELATÓRIO DE ENSAIOS</a>
+                </div>
+                <div class="barra-divisor"></div>
+                <div class="autenticidade">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="31" viewBox="0 0 26 31" fill="none">
+                        <path d="M17.6596 9.75977C16.4225 9.75977 15.416 8.83979 15.416 7.70898V0.970703H3.94166C1.99762 0.970703 0.416016 2.41639 0.416016 4.19336V27.748C0.416016 29.525 1.99762 30.9707 3.94166 30.9707H21.8904C23.8344 30.9707 25.416 29.525 25.416 27.748V9.75977H17.6596ZM5.67243 22.0645H10.334C10.865 22.0645 11.2955 22.458 11.2955 22.9434C11.2955 23.4287 10.865 23.8223 10.334 23.8223H5.67243C5.1414 23.8223 4.71089 23.4287 4.71089 22.9434C4.71089 22.458 5.1414 22.0645 5.67243 22.0645ZM4.71089 18.2559C4.71089 17.7705 5.1414 17.377 5.67243 17.377H19.775C20.306 17.377 20.7365 17.7705 20.7365 18.2559C20.7365 18.7412 20.306 19.1348 19.775 19.1348H5.67243C5.1414 19.1348 4.71089 18.7412 4.71089 18.2559ZM19.775 12.6895C20.306 12.6895 20.7365 13.083 20.7365 13.5684C20.7365 14.0538 20.306 14.4473 19.775 14.4473H5.67243C5.1414 14.4473 4.71089 14.0538 4.71089 13.5684C4.71089 13.083 5.1414 12.6895 5.67243 12.6895H19.775Z" fill="#F07E2C"/>
+                        <path d="M17.1467 7.70897C17.1467 7.87052 17.2904 8.00194 17.4672 8.00194H24.795C24.6191 7.70511 24.3928 7.43247 24.121 7.19733L17.94 1.85229C17.7001 1.64487 17.4329 1.47185 17.1467 1.33521V7.70897H17.1467Z" fill="#F07E2C"/>
+                    </svg>
+                    <a class="conteudo__textos transition" href="https://terranalises.glabnet1.com.br/administrativo/cadastro/valida_ordem_servico.php?codigoOrdemServico=&codigoAprovacao=&tipoRelatorio=&numeroRevisao=">AUTENTICIDADE DOS RELATÓRIOS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="credenciamento">
+        <div class="credenciamento-conteudo">
+            <div class="conteudo-texto">
+                <h2>credenciamento</h2>
+                <p class="text-cred">O Terranálises é credenciado junto à CIDASC - <strong class="str02">Companhia Integrada de Desenvolvimento Agrícola de Santa Catarina</strong> para realizar análises em amostras de águas e alimentos para o SIE - Serviço de Inspeção Estadual.</p>
+            </div>
+            <div class="conteudo-midia">
+                <img src="./img/cidasc.svg" alt="cidasc-logo">
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <section class="elemento">
+            <div class="elementos__media-social">
+                <img src="./img/logo-svg.svg" alt="logo-empresa">
+            </div>
+            <div  class="elementos__media">
+                <div class="matriz">
+                    <img src="./img/location-dot-solid.svg" alt="localização">
+                    <p>Matriz (SC): Rua Amâncio Chelli, n° 600. Bairro<br>Roland Mayer. Cidade Fraiburgo, Santa Catarina</p>
+                </div>
+                <div class="ponto-de-apoio">
+                    <img src="./img/location-dot-solid.svg" alt="localização">
+                    <p>Ponto Apoio (PR): Rua Coronel Luiz Victorino<br>Ordine, 1730 São Pedro. Cidade São José dos<br>Pinhais, Paraná.</p>
+                </div>
+                <div class="horario-de-funcionamento">
+                    <img src="./img/clock-icon.svg" alt="horarios">
+                    <p><strong>Horário de Atendimento</strong><br>Seg-Sex: 8:00 às 12:00 - 13:30 às 18:00<br>Sábado: 8:00 às 12:00</p>
+                </div>
+            </div>
+            <div class="elementos__media">
+                <div class="telefones">
+                    <img src="./img/call-icon.svg" alt="telefone">
+                    <p>Matriz (SC): (49) 3246-6243<br>Ponto Apoio (PR): (41) 35340504</p>
+                </div>
+                <div class="whatsapp">
+                    <img src="./img/wpp-icon.svg" alt="Whatsapp-icon">
+                    <p>Matriz (SC): 49 9 9913-1380<br>Ponto Apoio (PR): (41) 99836-0076</p>
+                </div>
+                <div class="emails">
+                    <img src="./img/email-icon.svg" alt="email-icon">
+                    <p>Matriz (SC): comercial5@terranalises.com.br<br>Ponto Apoio (PR): comercial4@terranalises.com.br</p>
+                </div>
+            </div>
+        </section>
+        <section class="direitos">
+            <p>&copy; Terranálises Laboratório de Analises Ambientais Ltda. CNPJ: 09.579.096/0001-69 Todos os direitos reservados.</p>
+            <p>Desenvolvido por Neocom Comunicação</p>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="./js/script-credenciamentos.js"></script>
+    <script src="./js/scroll-reveal-credenciamentos.js"></script>
+</body>
+</html>
