@@ -103,8 +103,8 @@
 }
 
 .slider {
-    width: 600px;
-    height: 400px;
+    width: 50%;
+    height: 10%;
 }
 
 .slider img {
@@ -117,4 +117,46 @@
 
 .sobre-texto {
     visibility: hidden;
+}
+
+@media screen and (max-width: 992px) {
+
+    .sobre-box {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .sobre-texto {
+        width: 90%;
+        align-items: center;
+    }
+
+    .texto-titulo {
+        width: 90%;
+        text-align: center;
+    }
+
+    .texto-titulo h2{
+        padding-bottom: 2%;
+    }
+
+    .texto-conteudo {
+        text-align: center;
+        width: 90%;
+    }
+
+    .texto-saiba-mais {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .slider {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }

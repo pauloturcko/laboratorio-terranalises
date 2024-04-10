@@ -4,14 +4,14 @@
 
 
 :root {
-  --laranja: #F07E2C;
-  --cinza-escuro: #444444;
-  --branco-principal: #FFFFFF;
-  --branco-secundario: #FFFAFA;
-  --margem-lateral: 250px;
-  --fonte-titulo: 'Nunito';
-  --fonte-texto: 'Lato';
-  --fonte-dados: 'Inter';
+    --laranja: #F07E2C;
+    --cinza-escuro: #444444;
+    --branco-principal: #FFFFFF;
+    --branco-secundario: #FFFAFA;
+    --margem-lateral: 250px;
+    --fonte-titulo: 'Nunito';
+    --fonte-texto: 'Lato';
+    --fonte-dados: 'Inter';
 }
 
 header {
@@ -30,7 +30,6 @@ header {
     display: flex;
     width: 75%;
 }
-
 
 .btn {
     display: flex;
@@ -183,78 +182,36 @@ header {
 }
 
 
-.menu-tablet {
-    display: none;
-}
-
-@media screen and (max-width: 1100px) {
-
-    
-}
-
-@media screen and (max-width: 768px) { 
-    
-    header {
-        background-color: var(--laranja);
-        width: 100%;
-    }
+@media screen and (max-width: 992px) {
 
     .dropdown {
-        display: none;
+        width: 90%;
     }
 
     .cabecalho-area {
-        display: none;
-    }
-
-    .menu-tablet {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 60px;
         width: 90%;
     }
 
-    .sistema {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-    }
 
-    .sistema a {
-        padding: 10px;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 200px;
-        height: 45px;
-        border: 1px solid var(--branco-principal);
-        border-radius: 8px;
-        font-family: var(--fonte-titulo);
-        color: var(--branco-principal);
-        font-size: 15px;
-        font-weight: 600;
-        text-align: center;
-    }
+}
 
-    .navbar-tablet {
-        display: flex;
-        width: 90%;
-        height: 40px;
+@media screen and (max-width: 768px) {
+
+    .dropdown {
         justify-content: space-between;
-        align-items: center;
     }
 
-    .btn {
-        color: var(--laranja);
-        font-family: var(--fonte-titulo);
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 15px;
-        font-weight: 600;
-        transition: 0.3s;
-        background-color: transparent;
+    .cabecalho-inferior__logo {
+        width: 13rem;
+        height: auto;
     }
+
+    .relatorios {
+        width: 10rem;
+    }
+
+    .autenticidade {
+        width: 10rem;
+    }
+
 }

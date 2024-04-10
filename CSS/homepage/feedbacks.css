@@ -16,13 +16,21 @@
 .feedbacks {
   position: relative;
   height: 100%;
-}
-
-.feedbacks {
   font-family: var(--fonte-texto);
   font-size: 14px;
   margin: 0;
   padding: 0;
+}
+
+.feedbacks h2 {
+  display: flex;
+  justify-content: center;
+  color: var(--laranja);
+  font-family: var(--fonte-titulo);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .swiper {
@@ -70,21 +78,17 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 
-  .feedbacks {
+  footer {
     width: 100%;
     height: auto;
   }
 
-  .swiper {
-    width: 90%;
-    height: auto;
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
   }
-
-  .swiper-wrapper {
-    width: 90%;
-  }
-
 
 }

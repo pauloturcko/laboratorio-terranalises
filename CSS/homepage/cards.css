@@ -84,44 +84,31 @@
   visibility: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+
+  .cards {
+    width: 100%;
+    height: auto;
+  }
 
   .cards-container {
-    max-width: 100%;
+    width: 85%;
     height: auto;
-    justify-content: center;
-    gap: 3%;
   }
 
   .card-items {
-    max-width: 30%;
-    max-height: 150px;
-    align-items: center;
-  }
-
-  .card-img {
-    max-width: 100px;
-    max-height: 75px;
-    border-radius: 10px;
+    width: 20%;
+    height: 12.5rem;
   }
 
   .card-img img {
-    max-width: 50px;
-    max-height: 40px;
+    width: 95%;
+    height: 95%;
   }
 
   .card-texto {
-    border: none;
-    background-color: transparent;
+    font-size: 0.8rem;
+    font-weight: 800;
   }
 
-  .card-texto a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 125px;
-    max-height: 15px;
-    font-size: 10px;
-    font-weight: 500;
-  }
 }
