@@ -112,3 +112,22 @@
   }
 
 }
+
+@media screen and (max-width: 992px) {
+
+  .cards-container {
+    width: 85%;
+    height: auto;
+    position: relative;
+    top: 2.5rem;
+  }
+
+  .card-items {
+    height: 10rem;
+  }
+
+  .card-texto {
+    font-size: 0.7rem;
+  }
+
+}

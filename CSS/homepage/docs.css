@@ -89,3 +89,25 @@
     }
 
 }
+
+@media screen and (max-width: 992px) {
+
+    .cards-selos {
+        width: 100%;
+    }
+
+    .cards-div {
+        width: 90%;
+    }
+
+    .card-space {
+        width: 22.5%;
+        height: 10rem;
+    }
+
+    .link-selos {
+        font-size: 0.7rem;
+    }
+
+
+}
