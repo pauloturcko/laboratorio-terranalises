@@ -181,8 +181,16 @@ header {
     background: var(--laranja);
 }
 
+.navbar {
+    display: none;
+}
+
 
 @media screen and (max-width: 992px) {
+
+    .navbar {
+        display: none;
+    }
 
     .dropdown {
         width: 90%;
@@ -196,6 +204,10 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+
+    .navbar {
+        display: none;
+    }
 
     .dropdown {
         justify-content: space-between;
@@ -217,5 +229,79 @@ header {
 }
 
 @media screen and (max-width: 576px) {
+
+    .dropdown {
+        display: none;
+    }
+
+    .logo-cabecalho-inf {
+        display: none;
+    }
+
+    .navbar {
+        padding: 0;
+        margin: 0;
+        display: block;
+        background-color: var(--laranja);
+    }
+
+    .navbar-logo {
+        width: 75%;
+        height: auto;
+    }
+
+    .container-fluid {
+        background-color: var(--laranja);
+    }
+
+    .navbar-toggler {
+        border-color: var(--branco-principal);
+    }
+
+    .navbar-toggler-icon {
+        color: var(--laranja);
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        font-family: var(--fonte-titulo);
+        color: var(--laranja);
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .navbar-nav {
+        gap: 1rem;
+    }
+
+    .dropdown-menu {
+        border: none;
+    }
+
+    .dropdown-item {
+        color: var(--laranja);
+    }
+
+    .cabecalho-area {
+        justify-content: center;
+    }
+
+    .cabecalho-inferior__conteudo {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .barra-divisor {
+        display: none;
+    }
     
+    .relatorios {
+        position: relative;
+        top: 0.5rem;
+    }
+    
+    .autenticidade {
+        position: relative;
+        top: 0.5rem;
+    }
 }

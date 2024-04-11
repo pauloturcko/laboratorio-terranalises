@@ -22,43 +22,79 @@
     <header>
         <div class="dropdown">
             <button class="btn nav-link"><a class="nav-btn" href="./about.html">o laboratório</a></button>
-            <button id="servicosBtn" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">servicos</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./divisao-agricola.html">Divisão agrícola</a></li>
-                    <li><a class="dropdown-item" href="./divisao-ambiental.html">divisão ambiental</a></li>
-                    <li><a class="dropdown-item" href="./divisao-de-alimentos.html">divisão de alimentos</a></li>
-                    <li><a class="dropdown-item" href="./amostragem.html">amostragem</a></li>
-                </ul>
-            <button class="btn nav-link"><a class="nav-btn" href="./credenciamentos.html">credenciamentos</a></button>
-            <button class="btn nav-link"><a class="nav-btn" href="./qualidade.html">acreditação</a></button>
+            <button id="servicosBtn" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">servicos</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./divisao-agricola.html">Divisão agrícola</a></li>
+                <li><a class="dropdown-item" href="./divisao-ambiental.html">divisão ambiental</a></li>
+                <li><a class="dropdown-item" href="./divisao-de-alimentos.html">divisão de alimentos</a></li>
+                <li><a class="dropdown-item" href="./amostragem.html">amostragem</a></li>
+            </ul>
+            <button class="btn nav-link"><a class="nav-btn" href="./acreditacao.html">acreditação</a></button>
         </div>
+
+        <nav class="navbar-expand-lg navbar bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img class="navbar-logo" src="./img/logo-svg.svg" alt="Logo do laboratorio Terranálises"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">o laboratório</a>
+                            </li>
+                            <li class="nav-item">
+                                <button id="servicosBtn" class="btn-mobile dropdown-toggle nav-link" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">servicos</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./divisao-agricola.html">Divisão agrícola</a></li>
+                                    <li><a class="dropdown-item" href="./divisao-ambiental.html">divisão ambiental</a></li>
+                                    <li><a class="dropdown-item" href="./divisao-de-alimentos.html">divisão de alimentos</a></li>
+                                    <li><a class="dropdown-item" href="./amostragem.html">amostragem</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./acreditacao.html"> acreditação</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
     </header>
 
-    <section class="cabecalho-inferior">
-        <div class="cabecalho-area">
-            <div class="logo-cabecalho-inf">
-                <a href="./index.html">
-                    <img class="cabecalho-inferior__logo" src="./img/logo.svg" alt="logo terranálises">
-                </a>
-            </div>
-            <div class="cabecalho-inferior__conteudo">
-                <div class="relatorios">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                        <path d="M20.5312 11.3477V5.54688C20.5312 3.02148 18.4805 0.970703 15.9551 0.970703H8.86523C6.33984 0.970703 4.29492 3.02148 4.29492 5.54688V11.3535C1.85156 11.6113 0 13.6738 0 16.1289V26.1719C0 28.8203 2.15039 30.9707 4.79883 30.9707H20.0215C22.6699 30.9707 24.8203 28.8203 24.8203 26.1719V16.123C24.8262 13.668 22.9746 11.6113 20.5312 11.3477ZM9.68555 5.67578H15.1465C15.5215 5.67578 15.8262 5.98047 15.8262 6.35547V11.3242H9.00586V6.35547C9.00586 5.98047 9.31055 5.67578 9.68555 5.67578ZM13.9453 21.3789V24.3262C13.9453 25.1699 13.2598 25.8555 12.416 25.8555C11.5723 25.8555 10.8867 25.1699 10.8867 24.3262V21.3789C9.65625 20.5352 9.33984 18.8477 10.1836 17.6172C11.0273 16.3867 12.7148 16.0703 13.9453 16.9141C15.1758 17.7578 15.4922 19.4453 14.6484 20.6758C14.4609 20.9512 14.2207 21.1914 13.9453 21.3789Z" fill="#F07E2C"/>
-                    </svg>
-                    <a class="conteudo__textos transition" href="https://terranalises.glabnet1.com.br/cliente/login/">RELATÓRIO DE ENSAIOS</a>
+    <main>
+        <section class="cabecalho-inferior">
+            <div class="cabecalho-area">
+                <div class="logo-cabecalho-inf">
+                    <a href="./index.html">
+                        <img class="cabecalho-inferior__logo" src="./img/logo.svg" alt="Logo do laboratorio Terranálises">
+                    </a>
                 </div>
-                <div class="barra-divisor"></div>
-                <div class="autenticidade">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="31" viewBox="0 0 26 31" fill="none">
-                        <path d="M17.6596 9.75977C16.4225 9.75977 15.416 8.83979 15.416 7.70898V0.970703H3.94166C1.99762 0.970703 0.416016 2.41639 0.416016 4.19336V27.748C0.416016 29.525 1.99762 30.9707 3.94166 30.9707H21.8904C23.8344 30.9707 25.416 29.525 25.416 27.748V9.75977H17.6596ZM5.67243 22.0645H10.334C10.865 22.0645 11.2955 22.458 11.2955 22.9434C11.2955 23.4287 10.865 23.8223 10.334 23.8223H5.67243C5.1414 23.8223 4.71089 23.4287 4.71089 22.9434C4.71089 22.458 5.1414 22.0645 5.67243 22.0645ZM4.71089 18.2559C4.71089 17.7705 5.1414 17.377 5.67243 17.377H19.775C20.306 17.377 20.7365 17.7705 20.7365 18.2559C20.7365 18.7412 20.306 19.1348 19.775 19.1348H5.67243C5.1414 19.1348 4.71089 18.7412 4.71089 18.2559ZM19.775 12.6895C20.306 12.6895 20.7365 13.083 20.7365 13.5684C20.7365 14.0538 20.306 14.4473 19.775 14.4473H5.67243C5.1414 14.4473 4.71089 14.0538 4.71089 13.5684C4.71089 13.083 5.1414 12.6895 5.67243 12.6895H19.775Z" fill="#F07E2C"/>
-                        <path d="M17.1467 7.70897C17.1467 7.87052 17.2904 8.00194 17.4672 8.00194H24.795C24.6191 7.70511 24.3928 7.43247 24.121 7.19733L17.94 1.85229C17.7001 1.64487 17.4329 1.47185 17.1467 1.33521V7.70897H17.1467Z" fill="#F07E2C"/>
-                    </svg>
-                    <a class="conteudo__textos transition" href="https://terranalises.glabnet1.com.br/administrativo/cadastro/valida_ordem_servico.php?codigoOrdemServico=&codigoAprovacao=&tipoRelatorio=&numeroRevisao=">AUTENTICIDADE DOS RELATÓRIOS</a>
+                <div class="cabecalho-inferior__conteudo">
+                    <div class="relatorios">
+                        <a class="conteudo__textos transition"
+                            href="https://terranalises.glabnet1.com.br/cliente/login/">RELATÓRIO DE ENSAIOS</a>
+                    </div>
+                    <div class="barra-divisor"></div>
+                    <div class="autenticidade">
+                        <a class="conteudo__textos transition"
+                            href="https://terranalises.glabnet1.com.br/administrativo/cadastro/valida_ordem_servico.php?codigoOrdemServico=&codigoAprovacao=&tipoRelatorio=&numeroRevisao=">AUTENTICIDADE
+                            DOS RELATÓRIOS</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     <section class="titulo">
         <h2>Análise de água para consumo humano</h2>

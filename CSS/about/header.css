@@ -4,20 +4,20 @@
 
 
 :root {
-  --laranja: #F07E2C;
-  --cinza-escuro: #444444;
-  --branco-principal: #FFFFFF;
-  --branco-secundario: #FFFAFA;
-  --margem-lateral: 250px;
-  --fonte-titulo: 'Nunito';
-  --fonte-texto: 'Lato';
-  --fonte-dados: 'Inter';
+    --laranja: #F07E2C;
+    --cinza-escuro: #444444;
+    --branco-principal: #FFFFFF;
+    --branco-secundario: #FFFAFA;
+    --margem-lateral: 250px;
+    --fonte-titulo: 'Nunito';
+    --fonte-texto: 'Lato';
+    --fonte-dados: 'Inter';
 }
 
 header {
     display: flex;
     background-color: var(--laranja);
-    min-height: 50px;
+    height: 3.25rem;
     justify-content: center;
     align-items: center;
 }
@@ -30,7 +30,6 @@ header {
     display: flex;
     width: 75%;
 }
-
 
 .btn {
     display: flex;
@@ -46,7 +45,7 @@ header {
     font-family: var(--fonte-titulo);
     text-align: center;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 600;
     transition: 0.3s;
     background-color: transparent;
@@ -79,7 +78,7 @@ header {
     padding: 1rem;
     color: var(--branco-principal);
     font-family: var(--fonte-titulo);
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
@@ -97,7 +96,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid var(--laranja);
+    border-bottom: 0.1em solid var(--laranja);
 }
 
 .cabecalho-area {
@@ -108,12 +107,18 @@ header {
 }
 
 .logo-cabecalho-inf {
-    width: 35px;
+    width: auto;
+}
+
+.cabecalho-inferior__logo {
+    width: 100%;
+    height: auto;
 }
 
 .cabecalho-inferior__conteudo {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     width: 65%;
     gap: 1rem;
 }
@@ -129,13 +134,13 @@ header {
 .relatorios a {
     color: var(--laranja);
     font-family: var(--fonte-titulo);
-    font-size: 25px;
-    font-weight: 650;
+    font-size: 1rem;
+    font-weight: 600;
     text-align: center;
     text-decoration: none;
-    border: 1px solid var(--laranja);
-    border-radius: 10px;
-    padding: 8px;
+    border: 0.1rem solid var(--laranja);
+    border-radius: 0.7rem;
+    padding: 0.5rem;
     transition: 0.3s;
 }
 
@@ -160,13 +165,13 @@ header {
 .autenticidade a {
     color: var(--laranja);
     font-family: var(--fonte-titulo);
-    font-size: 25px;
-    font-weight: 650;
+    font-size: 1rem;
+    font-weight: 600;
     text-align: center;
     text-decoration: none;
-    border: 1px solid var(--laranja);
-    border-radius: 10px;
-    padding: 8px;
+    border: 0.1rem solid var(--laranja);
+    border-radius: 0.7rem;
+    padding: 0.5rem;
     transition: 0.3s;
 }
 
@@ -176,74 +181,127 @@ header {
     background: var(--laranja);
 }
 
-
-.menu-tablet {
+.navbar {
     display: none;
 }
 
-@media screen and (max-width: 768px) { 
-    
-    header {
-        background-color: var(--laranja);
-        width: 100%;
+
+@media screen and (max-width: 992px) {
+
+    .navbar {
+        display: none;
     }
+
+    .dropdown {
+        width: 90%;
+    }
+
+    .cabecalho-area {
+        width: 90%;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .dropdown {
+        justify-content: space-between;
+    }
+
+    .cabecalho-inferior__logo {
+        width: 13rem;
+        height: auto;
+    }
+
+    .relatorios {
+        width: 10rem;
+    }
+
+    .autenticidade {
+        width: 10rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
 
     .dropdown {
         display: none;
     }
 
-    .cabecalho-area {
+    .logo-cabecalho-inf {
         display: none;
     }
 
-    .menu-tablet {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 60px;
-        width: 90%;
+    .navbar {
+        padding: 0;
+        margin: 0;
+        display: block;
+        background-color: var(--laranja);
     }
 
-    .sistema {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
+    .navbar-logo {
+        width: 75%;
+        height: auto;
     }
 
-    .sistema a {
-        padding: 10px;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 200px;
-        height: 45px;
-        border: 1px solid var(--branco-principal);
-        border-radius: 8px;
-        font-family: var(--fonte-titulo);
-        color: var(--branco-principal);
-        font-size: 15px;
-        font-weight: 600;
-        text-align: center;
+    .container-fluid {
+        background-color: var(--laranja);
     }
 
-    .navbar-tablet {
-        display: flex;
-        width: 90%;
-        height: 40px;
-        justify-content: space-between;
-        align-items: center;
+    .navbar-toggler {
+        border-color: var(--branco-principal);
     }
 
-    .btn {
+    .navbar-toggler-icon {
         color: var(--laranja);
-        font-family: var(--fonte-titulo);
-        text-align: center;
+    }
+
+    .nav-link {
         text-transform: uppercase;
-        font-size: 15px;
-        font-weight: 600;
-        transition: 0.3s;
-        background-color: transparent;
+        font-family: var(--fonte-titulo);
+        color: var(--laranja);
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .navbar-nav {
+        gap: 1rem;
+    }
+
+    .dropdown-menu {
+        border: none;
+    }
+
+    .dropdown-item {
+        color: var(--laranja);
+    }
+
+    .cabecalho-area {
+        justify-content: center;
+    }
+
+    .cabecalho-inferior__conteudo {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .barra-divisor {
+        display: none;
+    }
+    
+    .relatorios {
+        position: relative;
+        top: 0.5rem;
+    }
+    
+    .autenticidade {
+        position: relative;
+        top: 0.5rem;
     }
 }
