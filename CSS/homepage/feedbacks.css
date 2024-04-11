@@ -79,16 +79,28 @@
 }
 
 @media screen and (max-width: 992px) {
-
-  footer {
-    width: 100%;
-    height: auto;
+  
+  .user-text {
+    margin: 0 15%;
+    width: auto;
   }
 
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  .user-text {
+    margin: 0 15%;
+    width: auto;
   }
 
+}
+
+@media screen and (max-width: 576px) {
+
+  .user-text {
+    margin: 5%;
+    width: auto;
+  }
+  
 }
