@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="shortcut icon" href="./img/fav-icon.svg" type="image logo icon">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./scss/_reboot.scss">
     <link rel="stylesheet" href="./CSS/about/reset.css">
@@ -34,44 +39,33 @@
             <button class="btn nav-link"><a class="nav-btn" href="./acreditacao.html">acreditação</a></button>
         </div>
 
-        <nav class="navbar-expand-lg navbar bg-light fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"><img class="navbar-logo" src="./img/logo-svg.svg" alt="Logo do laboratorio Terranálises"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <div id="header">
+            <a id="logo" href="./index.html"><img class="logo-navbarmobile" src="./img/logo-svg.svg"
+                    alt="Logo do laboratório Terranálises"></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hamburger"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"></a>
+                <ul id="menu" role="menu">
+                    <li><a href="./about.html">O Laboratório</a></li>
+                    <li>
+                        <button class="servicos-navbar" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Serviços</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./divisao-agricola.html">Divisão agrícola</a></li>
+                            <li><a class="dropdown-item" href="./divisao-ambiental.html">divisão ambiental</a></li>
+                            <li><a class="dropdown-item" href="./divisao-de-alimentos.html">divisão de alimentos</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./about.html">o laboratório</a>
-                            </li>
-                            <li class="nav-item">
-                                <button id="servicosBtn" class="btn-mobile dropdown-toggle nav-link" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">servicos</button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./divisao-agricola.html">Divisão agrícola</a></li>
-                                    <li><a class="dropdown-item" href="./divisao-ambiental.html">divisão ambiental</a></li>
-                                    <li><a class="dropdown-item" href="./divisao-de-alimentos.html">divisão de alimentos</a></li>
-                                    <li><a class="dropdown-item" href="./amostragem.html">amostragem</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./acreditacao.html"> acreditação</a>
-                            </li>
+                            <li><a class="dropdown-item" href="./amostragem.html">amostragem</a></li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        
+                    </li>
+                    <li><a href="./acreditacao.html">Acreditação</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </header>
 
     <main>
@@ -79,7 +73,8 @@
             <div class="cabecalho-area">
                 <div class="logo-cabecalho-inf">
                     <a href="./index.html">
-                        <img class="cabecalho-inferior__logo" src="./img/logo.svg" alt="Logo do laboratorio Terranálises">
+                        <img class="cabecalho-inferior__logo" src="./img/logo.svg"
+                            alt="Logo do laboratorio Terranálises">
                     </a>
                 </div>
                 <div class="cabecalho-inferior__conteudo">
@@ -98,132 +93,169 @@
         </section>
 
 
-    <section class="banner">
-        <img src="./img/Banner-O-laboratório 2.png" alt="banner section">
-    </section>
+        <section class="banner">
+            <img src="./img/Banner-O-laboratório 2.png" alt="banner section">
+        </section>
 
-    <section class="design-section">
-        <div class="timeline">
-          <div class="timeline-empty">
-          </div>
-          <div class="timeline-middle">
-            <div class="timeline-circle"></div>
-          </div>
-          <div class="timeline-component timeline-content">
-            <h3>Fundado em 2008 em Fraiburgo/SC</h3>
-            <p>O laboratório Terranálises oferece análises físico-químicas e microbiológicas para água, efluentes, alimentos e solos. Desde então, expandiu sua gama de serviços e se tornou referência em qualidade e precisão nos resultados.
-            </p>
-          </div>
-          <div class="timeline-component timeline-content">
-            <h3>Com ampliação em 2010</h3>
-            <p>O Terranálises passou a atender diversas matrizes ambientais, garantindo a segurança e qualidade de alimentos e oferecendo análises agrícolas especializadas em solos e tecidos vegetais.</p>
-          </div>
-          <div class="timeline-middle">
-            <div class="timeline-circle"></div>
-          </div>
-          <div class="timeline-empty">
-          </div>
-      
-          <div class="timeline-empty">
-          </div>
-      
-          <div class="timeline-middle">
-            <div class="timeline-circle"></div>
-          </div>
-          <div class=" timeline-component timeline-content">
-            <h3>Hoje, o Terranálises</h3>
-            <p>É reconhecido como um parceiro essencial para indústrias, empresas agrícolas e setores ambientais, mantendo-se comprometido com resultados precisos, contribuindo para o desenvolvimento sustentável e segurança alimentar.
-            </p>
-          </div>
-      
-        </div>
-        </div>
-    </section>
+        <section class="design-section">
+            <div class="timeline">
+                <div class="timeline-empty">
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-component timeline-content">
+                    <h3>Fundado em 2008 em Fraiburgo/SC</h3>
+                    <p>O laboratório Terranálises oferece análises físico-químicas e microbiológicas para água,
+                        efluentes, alimentos e solos. Desde então, expandiu sua gama de serviços e se tornou referência
+                        em qualidade e precisão nos resultados.
+                    </p>
+                </div>
+                <div id="card-2" class="timeline-component timeline-content">
+                    <h3>Com ampliação em 2010</h3>
+                    <p>O Terranálises passou a atender diversas matrizes ambientais, garantindo a segurança e qualidade
+                        de alimentos e oferecendo análises agrícolas especializadas em solos e tecidos vegetais.</p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty">
+                </div>
+
+                <div class="timeline-empty">
+                </div>
+
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h3>Hoje, o Terranálises</h3>
+                    <p>É reconhecido como um parceiro essencial para indústrias, empresas agrícolas e setores
+                        ambientais, mantendo-se comprometido com resultados precisos, contribuindo para o
+                        desenvolvimento sustentável e segurança alimentar.
+                    </p>
+                </div>
+
+            </div>
+            </div>
+        </section>
 
 
-    <section class="lab">
-        <div class="content">
-            <img src="./img/lab-drone-about.png" alt="foto-drone-lab">
-            <div class="texto">
-                <h2>Estrutura</h2>
-                <p>Com uma área construída de 1900m2, inaugurada em Março de 2022, o Laboratório Terranálises dispõe de uma estrutura ampla e moderna. As análises são realizadas com equipamentos de última geração e o laboratório conta com uma equipe altamente qualificada para a realização das análises, fomentando continuamente o desenvolvimento pessoal de seus colaboradores e garantindo aos seus clientes e parceiros, resultados confiáveis e com rastreabilidade assegurada.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="mis-e-vis">
-        <div class="elements">
-            <div class="missao-e-visao">
-                <h3>Missão e <strong class="visao-destaque">Visão</strong></h3>
-            </div>
-            <div class="missao">
-                <div class="titulo-missao">
-                    <div class="missao-icone">
-                        <img src="./img/missao 1.svg" alt="missao-icon">
-                    </div>
-                    <p><strong class="missao-destaque">Missão</strong></p>
-                </div>
-                <div class="missao-texto">
-                    <p>Gerar resultados laboratoriais confiáveis, contribuindo para o desenvolvimento sustentável de nossos clientes, colaboradores e comunidade.</p>
-                </div>
-            </div>
-            <div class="visao">
-                <div class="titulo-visao">
-                    <div class="visao-icone">
-                        <img src="./img/pesquisar 1.svg" alt="visao-icon">
-                    </div>
-                    <p><strong class="visao-destaque">Visão</strong></p>
-                </div>
-                <div class="visao-texto">
-                    <p>Ser o laboratório de referência no Sul do Brasil para análises de solo, e estar entre os três maiores laboratórios ambientais de Santa Catarina</p>
-                </div>
-            </div>
-    </section>
-
-    <footer>
-        <section class="elemento">
-            <div class="elementos__media-social">
-                <img src="./img/logo-svg.svg" alt="logo-empresa">
-            </div>
-            <div  class="elementos__media">
-                <div class="matriz">
-                    <img src="./img/location-dot-solid.svg" alt="localização">
-                    <p>Matriz (SC): Rua Amâncio Chelli, n° 600. Bairro<br>Roland Mayer. Cidade Fraiburgo, Santa Catarina</p>
-                </div>
-                <div class="ponto-de-apoio">
-                    <img src="./img/location-dot-solid.svg" alt="localização">
-                    <p>Ponto Apoio (PR): Rua Coronel Luiz Victorino<br>Ordine, 1730 São Pedro. Cidade São José dos<br>Pinhais, Paraná.</p>
-                </div>
-                <div class="horario-de-funcionamento">
-                    <img src="./img/clock-icon.svg" alt="horarios">
-                    <p><strong>Horário de Atendimento</strong><br>Seg-Sex: 8:00 às 12:00 - 13:30 às 18:00<br>Sábado: 8:00 às 12:00</p>
-                </div>
-            </div>
-            <div class="elementos__media">
-                <div class="telefones">
-                    <img src="./img/call-icon.svg" alt="telefone">
-                    <p>Matriz (SC): (49) 3246-6243<br>Ponto Apoio (PR): (41) 35340504</p>
-                </div>
-                <div class="whatsapp">
-                    <img src="./img/wpp-icon.svg" alt="Whatsapp-icon">
-                    <p>Matriz (SC): 49 9 9913-1380<br>Ponto Apoio (PR): (41) 99836-0076</p>
-                </div>
-                <div class="emails">
-                    <img src="./img/email-icon.svg" alt="email-icon">
-                    <p>Matriz (SC): comercial5@terranalises.com.br<br>Ponto Apoio (PR): comercial4@terranalises.com.br</p>
+        <section class="lab">
+            <div class="content">
+                <img src="./img/lab-drone-about.png" alt="foto-drone-lab">
+                <div class="texto">
+                    <h2>Estrutura</h2>
+                    <p>Com uma área construída de 1900m2, inaugurada em Março de 2022, o Laboratório Terranálises dispõe
+                        de uma estrutura ampla e moderna. As análises são realizadas com equipamentos de última geração
+                        e o laboratório conta com uma equipe altamente qualificada para a realização das análises,
+                        fomentando continuamente o desenvolvimento pessoal de seus colaboradores e garantindo aos seus
+                        clientes e parceiros, resultados confiáveis e com rastreabilidade assegurada.
+                    </p>
                 </div>
             </div>
         </section>
-        <section class="direitos">
-            <p>&copy; Terranálises Laboratório de Analises Ambientais Ltda. CNPJ: 09.579.096/0001-69 Todos os direitos reservados.</p>
-            <p>Desenvolvido por Neocom Comunicação</p>
-        </section>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="./js/script-about.js"></script>
-    <script src="./js/scroll-reveal.js"></script>
+        <section class="missao-visao-valores">
+            <section class="container">
+                <div class="titulo-section">
+                    <h2><strong class="acrostico">M</strong>issão</h2>
+                    <h2><strong class="acrostico">V</strong>isão</h2>
+                    <h2><strong class="acrostico">V</strong>alores</h2>
+                </div>
+                <div class="missao">
+                    <div class="titulo"></div>
+                        <img src="./img/missao 1.svg" alt="Ícone do item missão">
+                        <h3>Missão</h3>
+                    </div>
+                    <div>
+                        <p>Gerar resultados laboratoriais confiáveis, contribuindo para o desenvolvimento sustentável de
+                            nossos clientes, colaboradores e comunidade.</p>
+                    </div>
+                </div>
+                <div class="visao">
+                    <div class="titulo">
+                        <img src="./img/pesquisar 1.svg" alt="Ícone do item visão">
+                        <h3>Visão</h3>
+                    </div>
+                    <div>
+                        <p>Ser o laboratório de referência no Sul do Brasil para análises de solo, e estar entre os três
+                            maiores laboratórios ambientais de Santa Catarina</p>
+                    </div>
+                </div>
+                <div class="valores">
+                    <div class="titulo"></div>
+                        <img src="./img/valores.svg" alt="Ícone do item valores">
+                        <h3>Valores</h3>
+                    </div>
+                    <div>
+                        <p>Qualidade e produtividade, imparcialidade, confiabilidade, competência técnica, paixão pelo
+                            serviço e foco no cliente, desenvolvimento das pessoas, sinergia, agilidade, honestidade e
+                            integridade.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <footer>
+            <section class="elemento">
+                <div class="elementos__media-social">
+                    <img src="./img/logo-svg.svg" alt="logo-empresa">
+                </div>
+                <div class="flex-container">
+                    <div class="elementos__media">
+                        <div class="matriz">
+                            <img src="./img/location-dot-solid.svg" alt="localização">
+                            <p>Matriz (SC): Rua Amâncio Chelli, n° 600.<br>Bairro Roland Mayer, Fraiburgo, SC</p>
+                        </div>
+                        <div class="ponto-de-apoio">
+                            <img src="./img/location-dot-solid.svg" alt="localização">
+                            <p>Ponto Apoio (PR): Rua Coronel Luiz Victorino Ordine, 1730 São Pedro. São José dos
+                                Pinhais,
+                                Paraná.</p>
+                        </div>
+                        <div class="horario-de-funcionamento">
+                            <img src="./img/clock-icon.svg" alt="horarios">
+                            <p><strong>Horário de Atendimento</strong><br>Seg-Sex: 8:00 às 12:00 - 13:30 às
+                                18:00<br>Sábado:
+                                8:00 às 12:00</p>
+                        </div>
+                    </div>
+                    <div class="elementos__media">
+                        <div class="telefones">
+                            <img src="./img/call-icon.svg" alt="telefone">
+                            <p>Matriz (SC): (49) 3246-6243<br>Ponto Apoio (PR): (41) 35340504</p>
+                        </div>
+                        <div class="whatsapp">
+                            <img src="./img/wpp-icon.svg" alt="Whatsapp-icon">
+                            <p>Matriz (SC): 49 9 9913-1380<br>Ponto Apoio (PR): (41) 99836-0076</p>
+                        </div>
+                        <div class="emails">
+                            <img src="./img/email-icon.svg" alt="email-icon">
+                            <p>Matriz (SC): comercial5@terranalises.com.br<br>Ponto Apoio (PR):
+                                comercial4@terranalises.com.br
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="direitos">
+                <p>&copy; Terranálises Laboratório de Analises Ambientais Ltda. CNPJ: 09.579.096/0001-69 Todos os
+                    direitos
+                    reservados.</p>
+                <p>Desenvolvido por Neocom Comunicação</p>
+            </section>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+        <script src="./js/script-about.js"></script>
+        <script src="./js/scroll-reveal.js"></script>
+        <script src="./js/navbar-mobile.js"></script>
 </body>
+
 </html>

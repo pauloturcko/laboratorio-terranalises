@@ -88,10 +88,6 @@
         border-radius: 0.8rem;
     }
 
-}
-
-@media screen and (max-width: 992px) {
-
     .cards-selos {
         width: 100%;
     }
@@ -109,5 +105,20 @@
         font-size: 0.7rem;
     }
 
+
+}
+
+@media screen and (max-width: 568px) {
+
+    .cards-div {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .card-space {
+        width: 50%;
+        height: 12.5rem;
+        row-gap: 2rem;
+    }
 
 }

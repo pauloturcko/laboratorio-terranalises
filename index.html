@@ -44,48 +44,29 @@
             <button class="btn nav-link"><a class="nav-btn" href="./acreditacao.html">acreditação</a></button>
         </div>
 
-        <nav class="navbar-expand-lg navbar bg-light fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"><img class="navbar-logo" src="./img/logo-svg.svg"
-                        alt="Logo do laboratorio Terranálises"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <div id="header">
+            <a id="logo" href="./index.html"><img class="logo-navbarmobile" src="./img/logo-svg.svg" alt="Logo do laboratório Terranálises"></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hamburger"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./about.html">o laboratório</a>
-                            </li>
-                            <li class="nav-item">
-                                <button id="servicosBtn" class="btn-mobile dropdown-toggle nav-link" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">servicos</button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./divisao-agricola.html">Divisão agrícola</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="./divisao-ambiental.html">divisão ambiental</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="./divisao-de-alimentos.html">divisão de
-                                            alimentos</a></li>
-                                    <li><a class="dropdown-item" href="./amostragem.html">amostragem</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./acreditacao.html"> acreditação</a>
-                            </li>
+                <ul id="menu" role="menu">
+                    <li><a href="./about.html">O Laboratório</a></li>
+                    <li>
+                        <button class="servicos-navbar" type="button" data-bs-toggle="dropdown" aria-expanded="false">Serviços</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./divisao-agricola.html">Divisão agrícola</a></li>
+                            <li><a class="dropdown-item" href="./divisao-ambiental.html">divisão ambiental</a></li>
+                            <li><a class="dropdown-item" href="./divisao-de-alimentos.html">divisão de alimentos</a></li>
+                            <li><a class="dropdown-item" href="./amostragem.html">amostragem</a></li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
+                    </li>
+                    <li><a href="./acreditacao.html">Acreditação</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
 
@@ -375,6 +356,7 @@
     <script src="./js/video.js"></script>
     <script src="./js/scroll-reveal-homepage.js"></script>
     <script src="./js/lab-img-swiper.js"></script>
+    <script src="./js/navbar-mobile.js"></script>
 
 </body>
 
