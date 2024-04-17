@@ -125,13 +125,14 @@
   height: 20rem;
   background-color: var(--branco-principal);
   border-left: 5px solid var(--laranja);
-  border-radius:3rem;
+  border-radius: 3rem;
   box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(7.5px);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;;
+  justify-content: center;
+  ;
   padding: 2em;
   gap: 5%;
 }
@@ -162,8 +163,9 @@
   margin: 15rem 0 10rem 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 75%;
+  height: auto;
 }
 
 .titulo-section {
@@ -184,21 +186,63 @@
   font-weight: 800;
 }
 
+.mvv {
+  gap: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 20rem;
+  width: 25%;
+  border-radius: 1.5rem;
+  border-top: 0.25rem solid #F16E0F;
+  background: #F5F5F5;
+  box-shadow: -4px 6px 3.5px -4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo__elementos {
+  margin-top: 10%;
+  gap: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo__elementos h3 {
+  color: var(--laranja);
+  font-family: var(--fonte-titulo);
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+.descricao__mvv {
+  text-align: center;
+  margin: 1rem;
+  display: flex;
+  color: var(--cinza-escuro);
+  font-family: var(--fonte-titulo);
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+
 @media screen and (min-width: 992px) {
 
   .timeline {
     display: grid;
     grid-template-columns: 1fr 3px 1fr;
   }
+
   .timeline-middle {
     position: relative;
     background-color: var(--laranja);
     width: 3px;
     height: 100%;
   }
+
   .main-middle {
     opacity: 0;
   }
+
   .timeline-circle {
     position: absolute;
     top: 0;
@@ -208,12 +252,8 @@
     border-radius: 50%;
     background-color: var(--laranja);
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
-@media screen and (min-width: 762px) {
-
-
-
-}
+@media screen and (min-width: 762px) {}
