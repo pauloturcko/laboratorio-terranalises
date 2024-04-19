@@ -107,8 +107,9 @@
     justify-content: center;
 }
 
-.selos_area {
-    width: 75%;
+.selos__area {
+    display: flex;
+    width: 90%;
     height: auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
