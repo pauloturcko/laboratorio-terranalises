@@ -6,8 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cor: {
+                            laranja: '#F07E2C',
+                            cinza: '#444444',
+                            branco: '#FFFFFF',
+                            brancoalternativo: '#F3F3F3',
+                        }
+                    },
+                    fontFamily: {
+                        nunito: ['nunito']
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="shortcut icon" href="./img/fav-icon.svg" type="image logo icon">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
@@ -92,16 +112,18 @@
             </div>
         </section>
 
-        <section class="titulo__pagina">
+        <section class="flex items-center justify-center py-10 text-2xl uppercase font-extrabold text-cor-laranja font-nunito">
             <h2>Selos de qualidade</h2>
         </section>
 
-        <section>
-            <div>
-                <p><strong>O laboratório Terranálises possui certificado de reconhecimento</strong></p>
-                <p>Junto ao IMA e Rede Metrológica do RS para realizações de análises físico químicas e microbiológicas em matrizes como águas e efluentes. Possui cadastro junto à FEPAM e também junto ao IAT para realizar análises de águas, efluentes e solos.</p>
+        <section class="flex items-center justify-center flex-column">
+            <div class="font-nunito text-cor-cinza flex flex-column items-center justify-start text-start w-4/5 rounded-2xl css p-8 h-96 gap-y-8">
+                <p class="text-2xl"><strong>O laboratório Terranálises possui certificado de reconhecimento</strong></p>
+                <p class="text-lg">Junto ao IMA e Rede Metrológica do RS para realizações de análises físico químicas e microbiológicas
+                    em matrizes como águas e efluentes. Possui cadastro junto à FEPAM e também junto ao IAT para
+                    realizar análises de águas, efluentes e solos.</p>
             </div>
-            <div>
+            <div class="w-4/5">
                 <img src="./img/FOTO-COMPLEMENTE-2 2.svg" alt="Selos de qualidade do laboratório terranálises">
             </div>
         </section>
