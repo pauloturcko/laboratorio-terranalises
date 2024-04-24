@@ -207,3 +207,20 @@
   backdrop-filter: blur(7px);
   border-radius: 5px;
 }
+
+@media screen and (max-width: 1024px) {
+
+  .texto-banner {
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+  }
+
+  .texto-banner01 {
+    font-size: 1.8rem;
+  }
+
+  .texto-banner02 {
+    font-size: 1.8rem;
+  }
+}
