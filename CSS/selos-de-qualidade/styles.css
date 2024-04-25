@@ -81,7 +81,7 @@
     width: 75%;
     height: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -112,4 +112,40 @@
     width: 90%;
     height: auto;
     justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .container__img {
+        width: 90%;
+    }
+
+    .container__texto {
+        width: 80%;
+    }
+
+    .texto__strong {
+        font-size: 2em;
+    }
+
+    .texto__normal {
+        font-size: 1.3em;
+    }
+
+    .checks__div {
+        padding: 1.3em;
+    }
+
+    .check__area {
+        width: 5em;
+        height: 5em;
+    }
+
+    .selos__area img {
+        width: 50%;
+    }
 }

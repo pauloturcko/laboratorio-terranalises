@@ -199,4 +199,28 @@ footer {
     flex-direction: column;
   }
 
+  .direitos {
+    width: 100%;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .direitos {
+    width: 100%;
+    background-color: var(--laranja);
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.1rem solid var(--branco-principal);
+  }
+  
+  .direitos p {
+    font-size: 0.5rem;
+    font-family: var(--fonte-dados);
+    color: var(--branco-principal);
+    padding: 2em;
+    margin: 0;
+    text-align: center;
+  }
+
 }
