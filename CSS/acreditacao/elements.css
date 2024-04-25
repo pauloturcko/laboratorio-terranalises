@@ -223,4 +223,109 @@
   .texto-banner02 {
     font-size: 1.8rem;
   }
+
+  .acreditacao-elementos {
+    width: 90%;
+    flex-direction: column-reverse;
+  }
+
+  .acreditacao-criativo {
+    width: 70%;
+    height: auto;
+    position: relative;
+    top: -7em;
+  }
+
+  .acreditacao-texto {
+    width: 90%;
+    position: relative;
+    top: -8em;
+  }
+
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 3em;
+  }
+
+  .card-acreditacao {
+    width: 50%;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .card-alimentos {
+    width: 50%;
+    height: auto;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .acreditacao {
+    width: 100%;
+  }
+
+  .acreditacao-elementos {
+    width: 100%;
+  }
+
+  .acreditacao-text {
+    width: 100%;
+  }
+
+  .text01 {
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  .text02 {
+    font-size: 1.3em;
+  }
+
+  .intro-acreditacao-items {
+    text-align: center;
+    width: 90%;
+    font-size: 1.5em;
+  }
+
+  .card-acreditacao {
+    width: 80%;
+  }
+
+  .card-alimentos {
+    width: 80%;
+  }
+
+  .acreditacao-criativo {
+    width: 70%;
+    height: auto;
+    position: initial;
+  }
+
+  .acreditacao-texto {
+    width: 90%;
+    position: initial;
+  }
+
+  .itens-acreditados {
+    margin-top: 5em;
+  }
+
+  .texto-banner01 {
+    font-size: 1.7em;
+    width: 100%;
+  }
+
+  .texto-banner02 {
+    font-size: 1.4em;
+    width: 100%;
+  }
+
+  .texto-banner {
+    width: 95%;
+  }
 }
