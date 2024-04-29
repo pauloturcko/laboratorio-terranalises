@@ -167,7 +167,7 @@
     .selos__area__secundario {
         display: flex;
         flex-direction: column;
-        gap: 5em;
+        gap: 3em;
         height: 100%;
     }
 
@@ -180,8 +180,9 @@
     .checks__div {
         border-left: 0.3em solid var(--laranja);
         flex-direction: column;
-        gap: 5em;
+        gap: 8em;
         align-items: flex-start;
+        justify-content: center;
         padding: 0;
         margin-left: 4em;
         width: 20%;
@@ -191,5 +192,28 @@
     .check__area {
         position: relative;
         left: -2.6em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .checks__div {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .selos__area__secundario {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
