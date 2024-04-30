@@ -80,9 +80,6 @@
   transform: scale(1.1);
 }
 
-.card-items {
-  visibility: hidden;
-}
 
 @media screen and (max-width: 992px) {
 
