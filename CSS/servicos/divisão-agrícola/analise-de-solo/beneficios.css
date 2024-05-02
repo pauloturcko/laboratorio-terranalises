@@ -30,7 +30,7 @@
   justify-content: space-between;
   width: 75%;
   height: 340px;
-  background-image: url(./background-benefits.svg);
+  background-image: url(./benefits.png);
 }
 
 .beneficio-card {
@@ -70,4 +70,77 @@
   font-family: var(--fonte-titulo);
   font-size: 22px;
   font-weight: 400;
+}
+
+.backgroundImagem {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+
+
+  .cards-beneficios {
+    width: 90%;
+    gap: 2.5em;
+  }
+
+  .beneficio-card {
+    width: 32%;
+    height: 20em;
+    gap: 3em;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1em;
+    font-size: 1.1em;
+  }
+
+  .icone-svg {
+    width: 35%;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  .backgroundImagem {
+    display: flex;
+    position: relative;
+    top: -5em;
+    z-index: -1;
+    border-radius: 1em;
+  }
+
+  .beneficios {
+    padding: 0;
+    margin: 0;
+  }
+
+  .cards-beneficios {
+    background-image: none;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .beneficios {
+    flex-direction: column;
+  }
+
+  .beneficio-card {
+    position: initial;
+    width: 75%;
+    height: 100%;
+    font-size: 0.8em;
+  }
+
+  .icone-svg {
+    width: 25%;
+    height: auto;
+  }
+
+  .icone-svg img {
+    padding: 0.5em;
+  }
+
 }

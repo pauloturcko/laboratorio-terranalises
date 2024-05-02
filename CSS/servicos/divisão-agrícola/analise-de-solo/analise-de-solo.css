@@ -19,14 +19,14 @@
     height: auto;
     font-family: var(--fonte-titulo);
     color: var(--cinza-escuro);
-    font-size: 48px;
+    font-size: 3em;
     font-weight: 700;
     text-align: center;
-    margin: 1.5em 0;
+    margin: 2em 0;
 }
 
 .texto {
-    margin: 50px 0 50px 0;
+    margin: 3.5em 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,26 +35,28 @@
 }
 
 .elementos-descricao {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     overflow: visible;
     width: 73%;
-    height: 340px;
+    height: 20em;
     background-image: url(./analise-de-solo01.png);
 }
 
 .desc-card {
-    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
     position: relative;
     width: 35%;
-    height: 115%;
-    border-radius: 8px;
-    border-right: 3px solid var(--laranja);
+    height: 25em;
+    border-radius: 0.8em;
+    border-right: 0.2em solid var(--laranja);
     background: linear-gradient(270deg, rgba(255, 255, 255, 0.60) -23.51%, #FFF 76.49%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1em);
     top: -1.5em;
 }
 
@@ -66,13 +68,13 @@
     justify-content: center;
     color: var(--cinza-escuro);
     font-family: var(--fonte-titulo);
-    font-size: 21px;
+    font-size: 1.3em;
     font-weight: 400;
-    margin: 0 30px;
+    margin: 0 1em;
 }
 
 .desc-card img {
-    margin: 40px 30px;
+    margin: 2.5em 1.8em;
 }
 
 .elementos-desc {
@@ -80,7 +82,7 @@
     justify-content: flex-end;
     overflow: visible;
     width: 73%;
-    height: 340px;
+    height: 20em;
     background-image: url(./analise-de-solo02.png);
 }
 
@@ -92,11 +94,11 @@
     position: relative;
     width: 35%;
     height: 115%;
-    border-radius: 8px;
-    border-left: 3px solid var(--laranja);
+    border-radius: 0.8em;
+    border-right: 0.2em solid var(--laranja);
     background: linear-gradient(270deg, rgba(255, 255, 255, 0.60) -23.51%, #FFF 76.49%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1em);
     top: -1.5em;
 }
 
@@ -108,11 +110,128 @@
     justify-content: center;
     color: var(--cinza-escuro);
     font-family: var(--fonte-titulo);
-    font-size: 21px;
+    font-size: 1.3em;
     font-weight: 400;
-    margin: 0 30px;
+    margin: 0 1em;
 }
 
 .desc-card-agr img {
-    margin: 40px 30px;
+    margin: 2.5em 1.8em;
+}
+
+.mobile-img {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .elementos-descricao, .elementos-desc {
+        width: 90%;
+    }
+
+    .desc-card {
+        width: 45%;
+        height: 25em;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .texto {
+        justify-content: flex-start;
+    }
+
+    .elementos-desc {
+        margin: 8%;
+        height: 32em;
+        width: 20em;
+        background-image: url(./analise-de-solo02-mobile.png);
+    }
+
+    .elementos-descricao {
+        overflow: visible;
+        justify-content: flex-end;
+        margin: 8%;
+        height: 32em;
+        width: 20em;
+        background-image: url(./analise-de-solo01-mobile.png);
+    }
+
+    .desc-card {
+        border-radius: 0 1em 1em 0;
+        top: 0;
+        left: +70%;
+        height: 105%;
+        width: 100%;
+    }
+
+    .elementos-descricao, .elementos-desc{
+        border-radius: .8em;
+    }
+
+    .desc-card p {
+        font-size: 1.5em;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .texto {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .elementos-descricao, .elementos-desc {
+        width: 90%;
+        height: auto;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .desc-card {
+        height: 100%;
+        width: 80%;
+        position: initial;
+        border-radius: 1em;
+        border-top: 0.2em solid var(--laranja);
+        border-right: none;
+    }
+
+    .desc-card p {
+        font-size: 1.2em;
+        margin: 0;
+        padding: 1.2em;
+    }
+
+    .desc-card img {
+        margin: 0;
+        padding: 1.2em;
+    }
+
+    .mobile-img {
+        width: 70%;
+        display: block;
+        border-radius: 0 0 1em 1em;
+    }
+
+    .texto {
+        padding-top: 10em;
+        margin-top: 0;
+    }
 }
