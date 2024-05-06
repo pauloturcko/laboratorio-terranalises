@@ -5,11 +5,6 @@ sr.reveal('.cabecalho-area', {
     distance: '-4em',
 });
 
-sr.reveal('.cabecalho-area', {
-    duration: 1500,
-    distance: '-4em',
-});
-
 sr.reveal('.cards-container', {
     duration: 1500,
     distance: '4em',
@@ -25,4 +20,9 @@ sr.reveal('.slider', {
     duration: 1500,
     distance: '4em',
     delay: 900,
+});
+
+sr.reveal('.card-space', {
+    duration: 1500,
+    distance: '4em',
 });
