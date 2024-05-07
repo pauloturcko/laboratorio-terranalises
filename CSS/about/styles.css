@@ -1089,7 +1089,7 @@ header {
   visibility: hidden;
 }
 
-.timeline-component, .timeline-content {
+.cardOne, .cardTwo, .cardThree {
   visibility: hidden;
 }
 
