@@ -479,7 +479,7 @@ header {
     overflow: visible;
     width: 73%;
     height: 20em;
-    background-image: url(./analise-de-solo01.png);
+    background-image: url(./ecotoxicologicas1.jpg);
 }
 
 .desc-card {
@@ -521,7 +521,7 @@ header {
     overflow: visible;
     width: 73%;
     height: 20em;
-    background-image: url(./analise-de-solo02.png);
+    background-image: url(./ecotoxicologicas2.jpg);
 }
 
 .desc-card-agr {
@@ -587,7 +587,7 @@ header {
         margin: 8%;
         height: 32em;
         width: 20em;
-        background-image: url(./analise-de-solo02-mobile.png);
+        background-image: url(./ecotoxicologicas2-mobile.jpg);
     }
 
     .elementos-descricao {
@@ -596,7 +596,7 @@ header {
         margin: 8%;
         height: 32em;
         width: 20em;
-        background-image: url(./analise-de-solo01-mobile.png);
+        background-image: url(./ecotoxicologicas1-mobile.jpg);
     }
 
     .desc-card {
