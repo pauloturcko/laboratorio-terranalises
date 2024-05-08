@@ -8,19 +8,15 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="shortcut icon" href="./img/fav-icon.svg" type="image logo icon">
+    <link rel="shortcut icon" href="./img/fav-icon.svg" type="Favicon do site do Laboratório Terranálises">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./scss/_reboot.scss">
     <link rel="stylesheet" href="./CSS/servicos/divisão-agrícola/analise-de-solo/reset.css">
-    <link rel="stylesheet" href="./CSS/servicos/divisão-agrícola/analise-de-solo/header.css">
-    <link rel="stylesheet" href="./CSS/servicos/divisão-agrícola/analise-de-solo/footer.css">
-    <link rel="stylesheet" href="./CSS/servicos/divisão-agrícola/analise-de-solo/analise-de-solo.css">
-    <link rel="stylesheet" href="./CSS/servicos/divisão-agrícola/analise-de-solo/beneficios.css">
+    <link rel="stylesheet" href="./CSS/servicos/divisão-agrícola/analise-de-solo/styles.css">
     <title>Terranálises</title>
 </head>
 
@@ -39,49 +35,32 @@
             <button class="btn nav-link"><a class="nav-btn" href="./acreditacao.html">acreditação</a></button>
         </div>
 
-        <nav class="navbar-expand-lg navbar bg-light fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"><img class="navbar-logo" src="./img/logo-svg.svg"
-                        alt="Logo do laboratorio Terranálises"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <div id="header">
+            <a id="logo" href="./index.html"><img class="logo-navbarmobile" src="./img/logo-svg.svg"
+                    alt="Logo do laboratório Terranálises"></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hamburger"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"></a>
+                <ul id="menu" role="menu">
+                    <li><a href="./about.html">O Laboratório</a></li>
+                    <li>
+                        <button class="servicos-navbar" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Serviços</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./divisao-agricola.html">Divisão agrícola</a></li>
+                            <li><a class="dropdown-item" href="./divisao-ambiental.html">divisão ambiental</a></li>
+                            <li><a class="dropdown-item" href="./divisao-de-alimentos.html">divisão de alimentos</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./about.html">o laboratório</a>
-                            </li>
-                            <li class="nav-item">
-                                <button id="servicosBtn" class="btn-mobile dropdown-toggle nav-link" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">servicos</button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./divisao-agricola.html">Divisão agrícola</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="./divisao-ambiental.html">divisão ambiental</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="./divisao-de-alimentos.html">divisão de
-                                            alimentos</a></li>
-                                    <li><a class="dropdown-item" href="./amostragem.html">amostragem</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./acreditacao.html"> acreditação</a>
-                            </li>
+                            <li><a class="dropdown-item" href="./amostragem.html">amostragem</a></li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
+                    </li>
+                    <li><a href="./acreditacao.html">Acreditação</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -115,21 +94,27 @@
 
         <section class="texto">
             <div class="elementos-descricao">
-                <div class="desc-card">
+                <img class="mobile-img"
+                    src="./CSS/servicos/divisão-agrícola/extrato-de-saturacao/analise-de-solo01-mobile.png"
+                    alt="Ciêntista coletando amostra de solo">
+                <div class="desc-card motionCardOne">
                     <img src="./img/terra-verde 1.svg" alt="icone-terra">
-                    <p>Além de fornecer água para as plantas, carrega os nutrientes necessários a elas e é essencial
-                        para as trocas entre as raízes e a parte sólida do solo.</p>
+                    <p>O extrato de saturação, além de fornecer água para as plantas, carrega os nutrientes necessários
+                        a elas e é essencial para as trocas entre as raízes e a parte sólida do solo</p>
                 </div>
             </div>
         </section>
 
         <section class="texto">
             <div class="elementos-desc">
-                <div class="desc-card-agr">
+                <img class="mobile-img"
+                    src="./CSS/servicos/divisão-agrícola/extrato-de-saturacao/analise-de-solo02-mobile.png"
+                    alt="Trator fazendo colheita">
+                <div class="desc-card-agr, desc-card motionCardTwo">
                     <img src="./img/rentavel 1.svg" alt="icone-terra">
                     <p>A partir deste extrato são determinados os elementos químicos pelos métodos tradicionais. A
-                        diferença para a análise tradicional é que os elementos são determinados no extrato e não são
-                        submetidos a extratores químicos.</p>
+                        diferença para a análise convencional é que os elementos são determinados no extrato e não são
+                        submetidos a extratores quiímicos.</p>
                 </div>
             </div>
         </section>
@@ -144,23 +129,25 @@
                     <div class="icone-svg">
                         <img src="./img/preco-baixo 1.svg" alt="icon-beneficio">
                     </div>
-                    <p>A água do solo desempenha papel fundamental ao fornecer nutrientes essenciais e facilitar as
-                        trocas com as raízes das plantas.</p>
+                    <p>Conhecimento da composição precisa dos fertilizantes para garantir sua eficácia.</p>
                 </div>
                 <div class="beneficio-card">
                     <div class="icone-svg">
                         <img src="./img/produtividade 1.svg" alt="icon-beneficio">
                     </div>
-                    <p>Métodos de análise direta no extrato do solo simplificam o processo, determinando os elementos
-                        químicos sem a necessidade de extratores químicos.</p>
+                    <p>Análises asseguram a qualidade dos insumos agrícolas em termos de concentração e tipo de
+                        matéria-prima.</p>
                 </div>
                 <div class="beneficio-card">
                     <div class="icone-svg">
                         <img src="./img/desenvolvimento-sustentavel 1.svg" alt="icon-beneficio">
                     </div>
-                    <p>Essa abordagem fornece informações precisas sobre a disponibilidade de nutrientes, auxiliando na
-                        gestão eficaz da fertilização.</p>
+                    <p>Permite aos clientes avaliar e escolher os produtos mais adequados para suas necessidades
+                        agrícolas.</p>
                 </div>
+                <img class="backgroundImagem"
+                    src="./CSS/servicos/divisão-agrícola/extrato-de-saturacao/benefits-mobile.png"
+                    alt="Desenvolvimento Sustentável">
             </div>
         </section>
 
@@ -169,54 +156,61 @@
                 <div class="elementos__media-social">
                     <img src="./img/logo-svg.svg" alt="logo-empresa">
                 </div>
-                <div class="elementos__media">
-                    <div class="matriz">
-                        <img src="./img/location-dot-solid.svg" alt="localização">
-                        <p>Matriz (SC): Rua Amâncio Chelli, n° 600. Bairro<br>Roland Mayer. Cidade Fraiburgo, Santa
-                            Catarina</p>
+                <div class="flex-container">
+                    <div class="elementos__media">
+                        <div class="matriz">
+                            <img src="./img/location-dot-solid.svg" alt="localização">
+                            <p>Matriz (SC): Rua Amâncio Chelli, n° 600.<br>Bairro Roland Mayer, Fraiburgo, SC</p>
+                        </div>
+                        <div class="ponto-de-apoio">
+                            <img src="./img/location-dot-solid.svg" alt="localização">
+                            <p>Ponto Apoio (PR): Rua Coronel Luiz Victorino Ordine, 1730 São Pedro. São José dos
+                                Pinhais,
+                                Paraná.</p>
+                        </div>
+                        <div class="horario-de-funcionamento">
+                            <img src="./img/clock-icon.svg" alt="horarios">
+                            <p><strong>Horário de Atendimento</strong><br>Seg-Sex: 8:00 às 12:00 - 13:30 às
+                                18:00<br>Sábado:
+                                8:00 às 12:00</p>
+                        </div>
                     </div>
-                    <div class="ponto-de-apoio">
-                        <img src="./img/location-dot-solid.svg" alt="localização">
-                        <p>Ponto Apoio (PR): Rua Coronel Luiz Victorino<br>Ordine, 1730 São Pedro. Cidade São José
-                            dos<br>Pinhais, Paraná.</p>
-                    </div>
-                    <div class="horario-de-funcionamento">
-                        <img src="./img/clock-icon.svg" alt="horarios">
-                        <p><strong>Horário de Atendimento</strong><br>Seg-Sex: 8:00 às 12:00 - 13:30 às 18:00<br>Sábado:
-                            8:00 às 12:00</p>
-                    </div>
-                </div>
-                <div class="elementos__media">
-                    <div class="telefones">
-                        <img src="./img/call-icon.svg" alt="telefone">
-                        <p>Matriz (SC): (49) 3246-6243<br>Ponto Apoio (PR): (41) 35340504</p>
-                    </div>
-                    <div class="whatsapp">
-                        <img src="./img/wpp-icon.svg" alt="Whatsapp-icon">
-                        <p>Matriz (SC): 49 9 9913-1380<br>Ponto Apoio (PR): (41) 99836-0076</p>
-                    </div>
-                    <div class="emails">
-                        <img src="./img/email-icon.svg" alt="email-icon">
-                        <p>Matriz (SC): comercial5@terranalises.com.br<br>Ponto Apoio (PR):
-                            comercial4@terranalises.com.br</p>
+                    <div class="elementos__media">
+                        <div class="telefones">
+                            <img src="./img/call-icon.svg" alt="telefone">
+                            <p>Matriz (SC): (49) 3246-6243<br>Ponto Apoio (PR): (41) 35340504</p>
+                        </div>
+                        <div class="whatsapp">
+                            <img src="./img/wpp-icon.svg" alt="Whatsapp-icon">
+                            <p>Matriz (SC): 49 9 9913-1380<br>Ponto Apoio (PR): (41) 99836-0076</p>
+                        </div>
+                        <div class="emails">
+                            <img src="./img/email-icon.svg" alt="email-icon">
+                            <p>Matriz (SC): comercial5@terranalises.com.br<br>Ponto Apoio (PR):
+                                comercial4@terranalises.com.br
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="direitos">
                 <p>&copy; Terranálises Laboratório de Analises Ambientais Ltda. CNPJ: 09.579.096/0001-69 Todos os
-                    direitos reservados.</p>
+                    direitos
+                    reservados.</p>
                 <p>Desenvolvido por Neocom Comunicação</p>
             </section>
         </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="./js/div-agr-subservicos-motion.js"></script>
+    <script src="./js/menu-toggle.js"></script>
+    <script src="./js/navbar-mobile.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-            crossorigin="anonymous"></script>
-        <script src="./js/menu-toggle.js"></script>
-        <script src="./js/items-div-agricola.js"></script>
 </body>
 
 </html>
