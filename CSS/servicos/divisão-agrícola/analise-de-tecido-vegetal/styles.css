@@ -521,7 +521,7 @@ header {
     overflow: visible;
     width: 73%;
     height: 20em;
-    background-image: url(./tecidovegetal2.jpg);
+    background-image: url(./tecido-vegetal02.jpg);
 }
 
 .desc-card-agr {
@@ -587,7 +587,7 @@ header {
         margin: 8%;
         height: 32em;
         width: 20em;
-        background-image: url(./tecido-vegetal2-mobile.jpg);
+        background-image: url(./tecido-vegetal02-mobile.jpg);
     }
 
     .elementos-descricao {
@@ -596,7 +596,7 @@ header {
         margin: 8%;
         height: 32em;
         width: 20em;
-        background-image: url(./tecido-vegetal1-mobile.jpg);
+        background-image: url(./tecido-vegetal01-mobile.jpg);
     }
 
     .desc-card {
