@@ -9,6 +9,10 @@
   --fonte-dados: 'Inter';
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
     display: flex;
     background-color: var(--laranja);
@@ -479,7 +483,7 @@ header {
     overflow: visible;
     width: 73%;
     height: 20em;
-    background-image: url(./analise-de-solo01.png);
+    background-image: url(./efluentesLiquidos01.jpg);
 }
 
 .desc-card {
@@ -521,7 +525,7 @@ header {
     overflow: visible;
     width: 73%;
     height: 20em;
-    background-image: url(./analise-de-solo02.png);
+    background-image: url(./efluentesLiquidos02.jpg);
 }
 
 .desc-card-agr {
@@ -587,7 +591,7 @@ header {
         margin: 8%;
         height: 32em;
         width: 20em;
-        background-image: url(./analise-de-solo02-mobile.png);
+        background-image: url(./efluentesLiquidosMobile02.jpg);
     }
 
     .elementos-descricao {
@@ -596,7 +600,7 @@ header {
         margin: 8%;
         height: 32em;
         width: 20em;
-        background-image: url(./analise-de-solo01-mobile.png);
+        background-image: url(./efluentesLiquidosMobile01.jpg);
     }
 
     .desc-card {

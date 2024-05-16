@@ -9,6 +9,10 @@
   --fonte-dados: 'Inter';
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .about-banner {
   background-image: url(./Banner-acreditação\ 6.png);
   width: 100%;

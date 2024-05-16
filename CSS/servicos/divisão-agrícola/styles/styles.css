@@ -9,6 +9,10 @@
   --fonte-dados: 'Inter';
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .agricola {
   display: flex;
   position: relative;

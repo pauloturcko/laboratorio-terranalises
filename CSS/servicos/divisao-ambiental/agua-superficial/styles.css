@@ -9,6 +9,18 @@
   --fonte-dados: 'Inter';
 }
 
+body {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 header {
     display: flex;
     background-color: var(--laranja);

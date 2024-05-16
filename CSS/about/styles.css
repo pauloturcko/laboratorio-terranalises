@@ -9,6 +9,10 @@
   --fonte-dados: 'Inter';
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .banner img {
   width: 100%;
   height: auto;
