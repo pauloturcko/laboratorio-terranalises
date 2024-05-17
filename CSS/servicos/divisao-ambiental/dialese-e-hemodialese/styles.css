@@ -483,7 +483,7 @@ header {
     overflow: visible;
     width: 73%;
     height: 20em;
-    background-image: url(./dialese01.jpg);
+    background-image: url(./dialese01.png);
 }
 
 .desc-card {
@@ -600,7 +600,7 @@ header {
         margin: 8%;
         height: 32em;
         width: 20em;
-        background-image: url(./dialiseMobile01.jpg);
+        background-image: url(./dialese01mobile.png);
     }
 
     .desc-card {
@@ -694,7 +694,7 @@ header {
     justify-content: space-between;
     width: 75%;
     height: 340px;
-    background-image: url(./benefits.jpg)
+    background-image: url(./divAmbientalBanner.png)
   }
   
   .beneficio-card {

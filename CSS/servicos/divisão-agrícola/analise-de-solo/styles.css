@@ -525,7 +525,7 @@ header {
     overflow: visible;
     width: 73%;
     height: 20em;
-    background-image: url(./solo2.jpg);
+    background-image: url(./analiseDeSolo02.jpg);
 }
 
 .desc-card-agr {
@@ -591,7 +591,7 @@ header {
         margin: 8%;
         height: 32em;
         width: 20em;
-        background-image: url(./solo2-mobile.jpg);
+        background-image: url(./analiseDeSolor02Mobile.jpg);
     }
 
     .elementos-descricao {
@@ -694,11 +694,11 @@ header {
     justify-content: space-between;
     width: 75%;
     height: 340px;
-    background-image: url(./benefits.jpg);
+    background-image: url(./divAgricolaBanner.png);
   }
   
   .beneficio-card {
-    position: relative;
+    position: relative; 
     top: -15em;
     display: flex;
     flex-direction: column;

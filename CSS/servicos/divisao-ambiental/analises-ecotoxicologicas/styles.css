@@ -525,7 +525,7 @@ header {
     overflow: visible;
     width: 73%;
     height: 20em;
-    background-image: url(./ecotoxicologicas2.jpg);
+    background-image: url(./analisesEcotoxicologicas02.png);
 }
 
 .desc-card-agr {
@@ -591,7 +591,7 @@ header {
         margin: 8%;
         height: 32em;
         width: 20em;
-        background-image: url(./ecotoxicologicas2-mobile.jpg);
+        background-image: url(./analisesEcotoxicologicas02Mobile.png);
     }
 
     .elementos-descricao {
@@ -694,7 +694,7 @@ header {
     justify-content: space-between;
     width: 75%;
     height: 340px;
-    background-image: url(./benefits.jpg);
+    background-image: url(./divAmbientalBanner.png);
   }
   
   .beneficio-card {

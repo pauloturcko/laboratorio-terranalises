@@ -533,7 +533,7 @@ header {
     overflow: visible;
     width: 73%;
     height: 20em;
-    background-image: url(./aguasuperficial2.jpg);
+    background-image: url(./aguaSuperficial02.jpg);
 }
 
 .desc-card-agr {
@@ -599,7 +599,7 @@ header {
         margin: 8%;
         height: 32em;
         width: 20em;
-        background-image: url(./aguasuperficial02-mobile.png);
+        background-image: url(./aguaSuperficial02Mobile.png);
     }
 
     .elementos-descricao {
@@ -702,7 +702,7 @@ header {
     justify-content: space-between;
     width: 75%;
     height: 340px;
-    background-image: url(./benefits.jpg);
+    background-image: url(./divAmbientalBanner.png);
   }
   
   .beneficio-card {
