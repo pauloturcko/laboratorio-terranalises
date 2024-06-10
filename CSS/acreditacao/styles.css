@@ -67,6 +67,37 @@ body {
   height: auto;
 }
 
+.escopo__acreditacao, .certificado {
+  border: 0.1em solid var(--laranja);
+  font-weight: 500;
+  padding: 0.5em;
+  border-radius: 0.75em;
+  background-color: var(--laranja);
+  color: var(--branco-principal);
+  font-family: var(--fonte-texto);
+  text-transform: uppercase;
+  font-size: 1em;
+  text-decoration: none;
+  transition: 0.3s;
+  transform: scale(1.0);
+}
+
+.escopo__acreditacao:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  border-color: var(--laranja);
+  background-color: transparent;
+  color: var(--laranja);
+}
+
+.certificado:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  border-color: var(--laranja);
+  background-color: transparent;
+  color: var(--laranja);
+}
+
 .acreditacao-elementos {
   display: flex;
   align-items: center;
