@@ -731,6 +731,8 @@ footer {
     width: 100%;
     height: auto;
     display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -752,7 +754,7 @@ footer {
     border: 1px solid var(--laranja);
     border-radius: 1em 1em 0 0;
     width: 100%;
-    height: 75px;
+    height: 13%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -764,8 +766,8 @@ footer {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .cardConteudo img {
@@ -794,30 +796,113 @@ footer {
     text-align: center;
     margin: 0;
     color: var(--branco-principal);
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-family: var(--fonte-titulo);
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .logoSeloCela {
-    width: 150px;
-    height: 150px;
+    width: 9.3em;
+    height: 9.3em;
 }
 
 .logoSeloSbcs {
-    width: 230px;
-    height: 150px;
+    width: 14.3em;
+    height: 9.3em;
 }
 
 .logoSeloFepam {
-    width: 170px;
-    height: 150px;
+    width: 10em;
+    height: 9.3em;
 }
 
 .logoSeloIma {
-    width: 260px;
-    height: 150px;
+    width: 16.25em;
+    height: 9.3em;
+}
+
+.logoSeloInmetro {
+    width: 6em;
+    height: 9.3em;
+
+}
+
+.somenteCardsNovos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+
+@media screen and (max-width: 992px) {
+
+    .somenteCards, .somenteCardsNovos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .selosCard {
+        width: 50%;
+    }
+
+    .cardConteudo {
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .docsDelimiter {
+        width: 90%;
+    }
+
+    .somenteCards, .somenteCardsNovos {
+        width: 100%;
+    }
+
+    .selosCard {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .docsDelimiter {
+        width: 90%;
+    }
+
+    .somenteCards, .somenteCardsNovos {
+        width: 100%;
+    }
+
+    .selosCard {
+        width: 90%;
+    }
+
+    .cardConteudo {
+        width: 70%;
+    }
+
+    .cardConteudo p {
+        font-size: 1em;
+    }
+
+    .cardConteudo a {
+        text-transform: none;
+        font-weight: 600;
+        color: #1E6FD9;
+    }
+
+
 }
 
 
