@@ -2,16 +2,18 @@
     --laranja: #F07E2C;
     --cinza-escuro: #444444;
     --branco-principal: #FFFFFF;
-    --branco-secundario: #FFFAFA;
+    --branco-secundario: #F3F3F3;
     --margem-lateral: 250px;
     --fonte-titulo: 'Nunito';
     --fonte-texto: 'Lato';
     --fonte-dados: 'Inter';
 }
 
+
 body {
     overflow-x: hidden;
-  }
+    min-height: 100vh;
+}
 
 header {
     display: flex;
@@ -197,26 +199,16 @@ header {
 
     .dropdown {
         width: 90%;
-        height: 100%;
     }
 
     .cabecalho-area {
         width: 90%;
     }
 
-    .nav-btn {
-        padding: 0.7em;
-        font-size: 0.8em;
-    }
 
 }
 
 @media screen and (max-width: 768px) {
-
-    .nav-btn {
-        font-size: 0.7em;
-        padding: 0.5em;
-    }
 
     .navbar {
         display: none;
@@ -242,7 +234,6 @@ header {
 }
 
 @media screen and (max-width: 576px) {
-    
 
     .dropdown {
         display: none;

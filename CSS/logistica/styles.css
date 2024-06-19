@@ -2,7 +2,7 @@
     --laranja: #F07E2C;
     --cinza-escuro: #444444;
     --branco-principal: #FFFFFF;
-    --branco-secundario: #FFFAFA;
+    --branco-secundario: #F3F3F3;
     --margem-lateral: 250px;
     --fonte-titulo: 'Nunito';
     --fonte-texto: 'Lato';
@@ -467,6 +467,98 @@ header {
     }
 }
 
+/* INICIO DOS ESTILOS DO CONTEUDO PRINCIPAL DA PAGINA */
+
+.background__section {
+    width: 100%;
+    height: auto;
+}
+
+.background__section img {
+    width: 100%;
+    height: auto;
+}
+
+.logistica__section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logistica__container {
+    width: 100%;
+    height: auto;
+    gap: 3em;
+    margin: 5% 0;
+    width: 75%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto__logistica {
+    width: 50%;
+    text-align: center;
+    border-radius: 1.5em;
+    background-color: var(--branco-secundario);
+    border-top: 0.2em solid var(--laranja);
+}
+
+.titulo__logistica {
+    font-family: var(--fonte-titulo);
+    color: var(--laranja);
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.texto__space {
+    padding: 3em;
+    font-family: var(--fonte-texto);
+    font-size: 1.2em;
+    text-align: start;
+    line-height: 1.3em;
+}
+
+/* CARROSSEL STYLES */
+
+.logistica__rotas {
+    gap: 3em;
+    width: 75%;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 3em;
+    position: relative; /* Para garantir que o contêiner esteja posicionado corretamente */
+}
+
+.button__prev, .button__next {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1em;
+    transition: transform 0.2s ease-in-out;
+}
+
+.button__prev:hover, .button__next:hover {
+    transform: scale(1.1);
+}
+
+.button__prev svg, .button__next svg {
+    fill: var(--branco-principal);
+    background-color: var(--laranja);
+    border-radius: 1em;
+}
+
+.logistica__imagem {
+    transition: transform 0.5s ease-in-out;
+}
+
+/* INICIO DOS ESTILOS DO FOOTER */
 
 footer {
     background-color: var(--laranja);

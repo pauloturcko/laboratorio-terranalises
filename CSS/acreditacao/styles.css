@@ -556,26 +556,16 @@ header {
 
   .dropdown {
       width: 90%;
-      height: 100%;
   }
 
   .cabecalho-area {
       width: 90%;
   }
 
-  .nav-btn {
-      padding: 0.7em;
-      font-size: 0.8em;
-  }
 
 }
 
 @media screen and (max-width: 768px) {
-
-  .nav-btn {
-      font-size: 0.7em;
-      padding: 0.5em;
-  }
 
   .navbar {
       display: none;
@@ -601,7 +591,6 @@ header {
 }
 
 @media screen and (max-width: 576px) {
-  
 
   .dropdown {
       display: none;

@@ -11,8 +11,6 @@
         <script src="https://unpkg.com/scrollreveal"></script>
         <link rel="shortcut icon" href="./img/fav-icon.svg"
             type="Favicon do site do Laboratório Terranálises">
-        <link rel="stylesheet" href="./CSS/logistica/reset.css">
-        <link rel="stylesheet" href="./CSS/logistica/styles.css">
         <link
             href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
             rel="stylesheet">
@@ -22,8 +20,10 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="shortcut icon" href="./img/fav-icon.svg"
+            type="Favicon do site do Laboratório Terranálises">
+        <link rel="stylesheet" href="./CSS/logistica/reset.css">
+        <link rel="stylesheet" href="./CSS/logistica/styles.css">
         <title>Terranálises</title>
     </head>
 
@@ -53,7 +53,7 @@
                 <button class="btn nav-link"><a class="nav-btn"
                         href="./pagina-de-documentos.html">qualidade</a></button>
                 <button class="btn nav-link"><a class="nav-btn"
-                        href="#">logistíca</a></button>
+                        href="./logistica.html">logistíca</a></button>
                 <button class="btn nav-link"><a class="nav-btn"
                         href="mailto:rh@terranalises.com.br?subject=Vaga+de+Emprego">trabalhe
                         conosco</a></button>
@@ -91,8 +91,10 @@
                             </ul>
                         </li>
                         <li><a href="./acreditacao.html">Acreditação</a></li>
-                        <li><a class="dropdown-item" href="#">qualidade</a></li>
-                        <li><a class="dropdown-item" href="#">logística</a></li>
+                        <li><a class="dropdown-item"
+                                href="./pagina-de-documentos.html">qualidade</a></li>
+                        <li><a class="dropdown-item"
+                                href="./logistica.html">logística</a></li>
                         <li><a class="dropdown-item"
                                 href="mailto:rh@terranalises.com.br?subject=Vaga+de+Emprego">trabalhe
                                 conosco</a></li>
@@ -100,23 +102,22 @@
                 </nav>
             </div>
         </header>
-
-
-
         <main>
 
             <section class="cabecalho-inferior">
                 <div class="cabecalho-area">
                     <div class="logo-cabecalho-inf">
                         <a href="./index.html">
-                            <img class="cabecalho-inferior__logo" src="./img/logo.svg"
+                            <img class="cabecalho-inferior__logo"
+                                src="./img/logo.svg"
                                 alt="Logo do laboratorio Terranálises">
                         </a>
                     </div>
                     <div class="cabecalho-inferior__conteudo">
                         <div class="relatorios">
                             <a class="conteudo__textos transition"
-                                href="https://terranalises.glabnet1.com.br/cliente/login/">RELATÓRIO DE ENSAIOS</a>
+                                href="https://terranalises.glabnet1.com.br/cliente/login/">RELATÓRIO
+                                DE ENSAIOS</a>
                         </div>
                         <div class="barra-divisor"></div>
                         <div class="autenticidade">
@@ -132,28 +133,54 @@
                 <img src="./img/bgLogistica.svg" alt="Carros do laboratório">
             </section>
 
-            <section>
-                <div>
-                    <h1>logística</h1>
-                    <div>
-                        <p>O Laboratório Terranálises atende toda a região sul do
+            <section class="logistica__section">
+                <div class="logistica__container">
+                    <h1 class="titulo__logistica">logística</h1>
+                    <div class="texto__logistica">
+                        <p class="texto__space">O Laboratório Terranálises
+                            atende toda a região sul do
                             Brasil. Possui uma logística própria eficiente, onde
-                            semanalmente realiza a coleta e recolhimento de amostras
+                            semanalmente realiza a coleta e recolhimento de
+                            amostras
                             em mais de 100 municípios do sul do país.
                             Entre em contato com nosso departamento comercial, e
                             verifique se sua cidade já é atendida com logística
                             própria do laboratório.</p>
                     </div>
                 </div>
-                <div>
-                    <img src alt>
-                    <img src alt>
-                    <img src alt>
-                    <img src alt>
-                    <img src alt>
-                    <img src alt>
-                    <img src alt>
+                <div class="logistica__rotas">
+                    <img class="logistica__imagem" src="./img/rotaColeta01.svg"
+                        alt="Pontos de Coleta do Laboratório Terranálises">
+                    <img class="logistica__imagem" src="./img/rotaColeta02.svg"
+                        alt="Pontos de Coleta do Laboratório Terranálises">
+                    <img class="logistica__imagem" src="./img/rotaColeta03.svg"
+                        alt="Pontos de Coleta do Laboratório Terranálises">
+                    <img class="logistica__imagem" src="./img/rotaColeta04.svg"
+                        alt="Pontos de Coleta do Laboratório Terranálises">
+                    <img class="logistica__imagem" src="./img/rotaColeta05.svg"
+                        alt="Pontos de Coleta do Laboratório Terranálises">
+                    <img class="logistica__imagem" src="./img/rotaColeta06.svg"
+                        alt="Pontos de Coleta do Laboratório Terranálises">
+                    <img class="logistica__imagem" src="./img/rotaColeta07.svg"
+                        alt="Pontos de Coleta do Laboratório Terranálises">
                 </div>
+                <div>
+                    <button id="prev" class="button__prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                        </svg>
+                    </button>
+                    <button id="next" class="button__next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
+                        </svg>
+                    </button>
+                </div>
+
             </section>
 
             <footer>
@@ -229,12 +256,20 @@
         </main>
 
         <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
             integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
             crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="./js/homepage-motion.js"></script>
         <script src="./js/menu-toggle.js"></script>
         <script src="./js/navbar-mobile.js"></script>
+        <script src="./js/carrossel-logistica.js"></script>
 
     </body>
 
