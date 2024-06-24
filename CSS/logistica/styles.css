@@ -558,6 +558,51 @@ header {
     transition: transform 0.5s ease-in-out;
 }
 
+
+@media screen and (max-width: 992px) {
+
+    .logistica__container {
+        width: 90%;
+    }
+
+    .texto__logistica {
+        width: 80%;
+    }
+
+    .logistica__rotas {
+        width: 90%;
+    }
+
+    .logistica__imagem {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    .texto__logistica {
+        width: 90%;
+    }
+
+    .texto__space {
+        font-size: 1em;
+    }
+
+    .logistica__imagem {
+        width: 40%;
+        height: 40%;
+    }
+
+    .logistica__rotas {
+        gap: 1.5em;
+    }
+    
+    .titulo__logistica {
+        font-size: 2em;
+    }
+}
+
 /* INICIO DOS ESTILOS DO FOOTER */
 
 footer {

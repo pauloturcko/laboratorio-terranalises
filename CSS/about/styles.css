@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+.bannerMobile {
+  display: none;
+}
+
 .banner img {
   width: 100%;
   height: auto;
@@ -665,6 +669,7 @@ footer {
 }
 
 header {
+  width: 100%;
   display: flex;
   background-color: var(--laranja);
   height: 3.25rem;
@@ -1105,6 +1110,18 @@ header {
       transform: rotate(-135deg);
       top: -7px;
   }
+}
+
+@media screen and (max-width: 620px) {
+
+  .bannerDesktop {
+    display: none;
+  }
+
+  .bannerMobile {
+    display: flex;
+  }
+  
 }
 
 ::-webkit-scrollbar {

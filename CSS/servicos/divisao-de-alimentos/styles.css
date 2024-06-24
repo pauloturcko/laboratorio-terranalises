@@ -494,7 +494,7 @@ header {
   overflow: visible;
   width: 73%;
   height: 20em;
-  background-image: url(./alimentos1.jpg);
+  background-image: url(./alimentos.png)
 }
 
 .desc-card {
@@ -612,7 +612,7 @@ header {
     margin: 8%;
     height: 32em;
     width: 20em;
-    background-image: url(./alimentos1-mobile.jpg);
+    background-image: url(./alimentosMobile01.png);
   }
 
   .desc-card {
@@ -690,138 +690,6 @@ header {
     padding-top: 10em;
     margin-top: 0;
   }
-}
-
-.beneficios {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  margin: 22.5em 0 5em 0;
-}
-
-.cards-beneficios {
-  overflow: visible;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 75%;
-  height: 340px;
-  background-image: url(./benefits.jpg);
-}
-
-.beneficio-card {
-  position: relative;
-  top: -15em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  width: 30%;
-  height: 100%;
-  border-radius: 8px;
-  border-top: 3px solid var(--laranja);
-  background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.74) 100%);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(10px);
-}
-
-.icone-svg img {
-  width: 65%;
-  height: 65%;
-}
-
-.icone-svg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--laranja);
-  width: 20%;
-  height: 20%;
-  border-radius: 5px;
-}
-
-.beneficio-card p {
-  width: 90%;
-  color: var(--cinza-escuro);
-  font-family: var(--fonte-titulo);
-  font-size: 1.2em;
-  font-weight: 400;
-}
-
-.backgroundImagem {
-  display: none;
-}
-
-@media screen and (max-width: 1024px) {
-
-
-
-  .cards-beneficios {
-    width: 90%;
-    gap: 2.5em;
-  }
-
-  .beneficio-card {
-    width: 32%;
-    height: 20em;
-    gap: 3em;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 1em;
-    font-size: 1.1em;
-  }
-
-  .icone-svg {
-    width: 35%;
-    height: auto;
-  }
-
-}
-
-@media screen and (max-width: 576px) {
-
-  .backgroundImagem {
-    display: flex;
-    position: relative;
-    top: -5em;
-    z-index: -1;
-    border-radius: 1em;
-  }
-
-  .beneficios {
-    padding: 0;
-    margin: 0;
-  }
-
-  .cards-beneficios {
-    background-image: none;
-    flex-direction: column;
-    height: auto;
-  }
-
-  .beneficios {
-    flex-direction: column;
-  }
-
-  .beneficio-card {
-    position: initial;
-    width: 75%;
-    height: 100%;
-    font-size: 0.8em;
-  }
-
-  .icone-svg {
-    width: 25%;
-    height: auto;
-  }
-
-  .icone-svg img {
-    padding: 0.5em;
-  }
-
 }
 
 footer {
